@@ -1,0 +1,358 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    /*height: 100%;*/
+    background: #161819;
+}
+/*清除浮动*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+
+
+/*登录 stare*/
+.api_login {
+    width: 400px;
+    background: #232628;
+    padding-bottom: 30px;
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+
+    top: -400px;
+    -webkit-transform: translateY(800px);
+    -webkit-transition: transform .5s;
+
+}
+
+.api_login h2 {
+	font-family:MicrosoftYaHei;
+	color:#f38b1e;
+    height: 20px;
+    line-height: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    filter: dropshadow(color=#fff, offx=0, offy=1);
+    border-bottom: 2px solid #161819;
+    padding-left: 20px;
+
+}
+
+.login-inform {
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.login-inform label {
+	color:#0d7b7b;
+}
+
+p + p {
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    height: 33px;
+    padding: 0 10px 0 10px;
+    margin: 0 auto;
+    margin-right: 10px;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background: royalblue;
+    width: 72px;
+    height: 30px;
+    line-height: 30px;
+    border: 0px;
+    margin-left: 40px;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    vertical-align: middle;
+    margin-bottom: 5px;
+    margin-right: 3px;
+}
+
+.login_checked {
+    margin-left: 100px;
+}
+/*登录 end*/
+
+/*main nav start*/
+.main-nav {
+	height: 80px;
+	background: #212528;
+	width: 100%;
+	padding: 15px 40px 0;
+	position: fixed;
+	top:0;
+	left: 0px;
+	z-index: 1000;
+}
+.main-nav ul li a:hover{
+	background: #212528;
+	color: #fff;
+}
+.main-nav ul li a:focus{
+	background: #212528;
+	color: #fff;
+}
+
+.main-nav ul li .active {
+	color: #fff;
+}
+
+.main-nav-logo {
+	background: #f38b1e;
+}
+
+.main-nav-title {
+	color: #f38b1e;
+}
+
+.main-nav-left a {
+	font-size: 16px;
+	overflow: hidden;
+	color: #179595;
+}
+
+.main-nav-left a span {
+	position: absolute;
+	bottom: 0;
+	left: -100%;
+	height: 2px;
+	width: 60%;
+	background: #fff;
+	transition: all 0.6s;
+	-webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+}
+
+.main-nav-left a:hover span{
+	left: 20%;
+}
+
+.main-nav-right a {
+	font-size: 16px;
+	color: #f38b1e;
+}
+/*main nav end*/
+
+/*monitor start*/
+.nav-left {
+	position: fixed;
+    top: 500px;
+    z-index: 111;
+}
+
+.nav-left li {
+	list-style: none;
+	margin-bottom: 20px;
+	border: 1px solid #179595;
+	text-align: center;
+	padding: 5px;
+	color: #179595;
+	cursor: pointer;
+	border-radius: 1px;
+	position: relative;
+	overflow: hidden;
+}
+
+.nav-left li span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #179595;
+	color:#fff;
+	font-size:20px;
+	padding:5px;
+	opacity:0;
+	transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+}
+
+.nav-left li:hover span {
+	opacity: 1;
+}
+
+.nav-left .active {
+	background: #179595;
+	color: #fff;
+}
+
+.common-top {
+	margin-left: 200px;
+	margin-top: 100px;
+	padding-left:300px;
+	height: 200px;
+}
+.common-top h1{
+	font-family: NovecentowideBookBold;
+	color: #ffda9a;
+	font-size: 80px;
+}
+
+.common-main {
+	margin-left: 200px;
+	margin-top: 100px;
+}
+
+.common-main-title {
+	background: url(../images/mark.png) no-repeat;
+	background-size: contain;
+	padding-left:100px;
+	font: bold 22px/1 "microsoft yahei";
+	color: #ffda9a;
+	margin-bottom: 50px;
+}
+
+.common-main-content{
+	text-align: center;
+}
+
+.api-watch-grid,.api-user-grid{
+	float: left;
+	margin-right: 50px;
+	text-align: center;
+}
+
+.api-watch-grid-title,.api-user-grid-title,.api-error-grid-title{
+	color: #ffda9a;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.api-watch-frequency{
+	margin-bottom: 20px;
+}
+
+.api-watch-frequency-grid,.api-watch-delay-grid{
+	width: 500px;
+	height: 350px;
+}
+
+.api-watch-details-grid{
+	width: 1000px;
+	height: 710px;
+}
+
+.api-user-amounts-grid,.api-user-details-grid{
+	width: 750px;
+}
+
+.api-watch-error-grid{
+	width: 1550px;
+	text-align: center;
+}
+.error-watch-details-grid {
+	height: 640px;
+}
+
+.currentPage {
+	margin-left: 40px;
+	font-size: 14px;
+	color: #FFEBC8;
+}
+
+.api-watch-error-search {
+	position: absolute;
+    top: 220px;
+    left: 980px;
+    height: 300px;
+    width: 190px;
+    background: #161819;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.api-watch-error-search-btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.api-watch-error-search-btn button {
+	margin: 0;
+}
+
+.btn-copy{
+	font-size: 17px;
+	font-weight: bold;
+    color: #161819;
+    position: absolute;
+    right: 7px;
+    bottom: 8px;
+    display: none;
+    cursor: pointer;
+}
+
+.btn-copy-tips {
+	position: absolute;
+	bottom: -30px;
+    right: 0;
+	background: #179595;
+	color: #ffebc8;
+	height: 30px;
+    width: 100px;
+    border-radius: 2%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    opacity: 0.7;    
+}
+
+.btn-copy:active {
+	color: #f38b1e;
+}
+
+
+.tooltip-inner {
+	border-radius: 0;
+	min-width: 100px;
+	max-width:1000px;
+	color: #fff;
+	background: #f38b1e;
+	word-wrap : break-word;
+	word-break:break-all;
+	font-size: 13px;
+	padding-right: 30px;
+}
+
+.tooltip:hover .btn-copy{
+	display: block;
+}
+
+.tooltip.top .tooltip-arrow {
+	border-top-color:white;
+}
+
+
+/*monitor end*/
+
+
+/*apilist start*/
+
+/*apilist end*/
+
+
+/*userinfo start*/
+
+/*userinfo end*/
+
+
+
+
+
+

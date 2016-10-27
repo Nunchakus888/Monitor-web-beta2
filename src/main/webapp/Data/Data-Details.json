@@ -1,0 +1,14 @@
+
+[
+  { "Names": "username",  "Details": "1" },
+  { "Names": "classname",  "Details": "2" },
+  { "Names": "method",  "Details": "3" },
+  { "Names": "msg",  "Details": "4" },
+  { "Names": "sqlrowcount",  "Details": "5" },
+  { "Names": "msgdetail",  "Details": "6" },
+  { "Names": "sqlcolcount",  "Details": "7" },
+  { "Names": "sqltaketime",  "Details": "8" },
+  { "Names": "datasourceid",  "Details": "9" }
+]
+
+
